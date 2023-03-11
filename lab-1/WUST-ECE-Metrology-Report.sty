@@ -22,17 +22,16 @@
 \DeclareRobustCommand*{\reportgroup}[1]{\gdef\@reportgroup{#1}}
 \DeclareRobustCommand*{\studenta}[1]{\gdef\@studenta{#1}}
 \DeclareRobustCommand*{\studentb}[1]{\gdef\@studentb{#1}}
-\DeclareRobustCommand*{\studentc}[1]{\gdef\@studentc{#1}}
 \DeclareRobustCommand*{\reportclassdate}[1]{\gdef\@reportclassdate{#1}}
 \DeclareRobustCommand*{\reportlabassistant}[1]{\gdef\@reportlabassistant{#1}}
 
 \reportgroup{}
 \studenta{}
 \studentb{}
-\studentc{}
+
 \reportclassdate{}
 \reportlabassistant{}
-\author{\@studenta, \@studentb, \@studentc}
+\author{\@studenta, \@studentb}
 
 \renewcommand{\maketitle}{
 \begin{titlepage}
@@ -42,7 +41,7 @@
   \newpage
   \null
   \begin{center}
-    {\Huge{WrocÅ‚aw University of Science and Technology}}
+    {\Huge{Wrocl‚aw University of Science and Technology}}
     \vfill
     {\Large{\uppercase{General Physics\\laboratory report}}}
     \vfill
@@ -53,14 +52,14 @@
       \fbox{%
         \begin{tabular*}{\textwidth}
         {p{0.6\TitleTableWidth} p{0.4\TitleTableWidth}}
-        Chair of Electronic and Photonic Metrology\\
-        \uppercase{electrionic measurements laboratory}\\\\
+        
+        
         Theme of class: \@title \\\\
-        Group no: \@reportgroup\\\\
+        
         Students: & Date of class: \@reportclassdate\\
         1. \@studenta\\
         2. \@studentb\\
-        3. \@studentc & Submission Date: \@date\\\\
+         & Submission Date: \@date\\\\
         Lab assistant: \@reportlabassistant\\
         \end{tabular*}%
       }%
@@ -71,7 +70,7 @@
 \def\ps@metrology{
   \renewcommand{\@evenhead}{
     \vbox{
-      \hbox{General Pysics\hfill}
+      \hbox{General Physics\hfill}
       \vspace{1pt}
       \hbox{\rule{\textwidth}{0.5pt}\hfill}
     }
