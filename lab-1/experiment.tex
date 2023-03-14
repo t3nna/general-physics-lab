@@ -33,9 +33,10 @@ For the first measurement we were using Calliper and Lab Balances. First of all 
         $u_B$ & 0.3441007604 & 0.458993464 & 0.9465657663 & 0.04579542335 \\ \hline
         $u_{A+B}$ & 0.3441015778 & 0.4589951661 & 0.946567384 & 0.04579558057 \\ \hline
         \multicolumn{5}{c}{}\\ \hline
-        $\bar{V}$ & 2851.487655 & ~ & ~ & ~ \\ \hline
-        $\rho$ & 2.781705888 & ~ & ~ & ~ \\ \hline
-        âˆ†c ($\bar{V}$) & 431.2854846& ~ & ~ & ~  \\ \hline
+        $\bar{V}$ $[mm^3]$& 2851.487655 & ~ & ~ & ~ \\ \hline
+        $\rho$ $[g/cm^3]$ & 2.781705888 & ~ & ~ & ~ \\ \hline
+        $u_{ˆ†c}$ ($\bar{V}$) & 431.2854846& ~ & ~ & ~  \\ \hline
+        $u_c (\bar\rho)$  & 0.0004210374579& ~ & ~ & ~  \\ \hline
         
     \end{tabular}
     \caption{Dimensions measurements, uncertainties}
@@ -46,12 +47,12 @@ Example calculations for $\phi_{in}$ are shown in the equations below.
 \begin{equation}
 u_B(\phi_{in}) = \sqrt{\frac{(\Delta{\bar\phi_{in}})^2}{3}}=
 \sqrt{\frac{(0.05 \cdot 11.92)}{3}} 
-=0.3441007604
+=\SI{0.3441007604}{mm}
 \end{equation}
 
 \begin{equation}
-	u(\phi_{in}) = \sqrt{u_A^2(\bar\phi_{in})+u_B^2(\bar\phi_{o})}
-	=\sqrt{0.00075^2+0.3441007604^2}=0.3441015778
+	u_{A+B}(\phi_{in}) = \sqrt{u_A^2(\bar\phi_{in})+u_B^2(\bar\phi_{o})}
+	=\sqrt{0.00075^2+0.3441007604^2}=\SI{0.3441015778}{\mm}
 \end{equation}
 
 
@@ -87,7 +88,9 @@ In this experiment we were using micrometer screw instead of calliper.
         \multicolumn{5}{c}{}\\ \hline
         $\bar{V}$ $[mm^3]$& 2941.883983 & ~ & ~ & ~ \\ \hline
         $\rho$ $[g/cm^3]$ & 2.69623141 & ~ & ~ & ~ \\ \hline
-        âˆ†c ($\bar{V}$) & 224.7720491& ~ & ~ & ~  \\ \hline
+        $u_{ˆ†c}$ ($\bar{V}$) & 224.7720491& ~ & ~ & ~  \\ \hline
+        $u_c (\bar\rho)$  & 0.0002070566501& ~ & ~ & ~  \\ \hline
+
         
     \end{tabular}
     \caption{Dimensions measurements, uncertainties}
